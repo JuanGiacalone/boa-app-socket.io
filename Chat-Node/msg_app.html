@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BOA ChatAPPs</title>
+    
+    <meta name="HandheldFriendly" content="true" /> 
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <base href="/">
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/Chat-Node/style/chat_main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/style/favicon.ico" type="image/x-icon">
+    
+    
+  </head>
+  <nav>
+        
+    <div class="navbar">
+     
+        
+      <img src="/style/logo_boa_black.png" alt="BoaApp" srcset="">
+      <div class="navbar-buttons">
+        <a href="#home">Inicio</a>
+      <a href="#news">Foro</a>
+      <a href="#contact">Sobre el sitio</a>
+      </div>
+      
+      
+    </div>
+  </nav>
+      
+  <body>
+    <div class="container">
+      <div class="columna-izquierda footer">
+        <div class="navbar">
+     
+        
+          <img src="/style/logo_boa_black.png" alt="BoaApp" srcset="">
+          <div class="navbar-buttons">
+            <a href="#home">Inicio</a>
+          <a href="#news">Foro</a>
+          <a href="#contact">Sobre el sitio</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="columna-izquierda">
+        <div class="columna-izquierda-container">
+          <div class="mi-card login">
+            <h5>Ingresá con tu red social !</h5>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+          <div class="mi-card diccionario">
+            <h5>Ayudate con WordReference !</h5>
+          
+            <iframe src="https://www.wordreference.com/es/" frameborder="1" scrolling=""></iframe>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="columna-derecha">
+
+        <div class="msg-container">
+          <div class="msg-head">
+            
+          </div>
+          <div class="msg-body">
+            <div class="msg-body-chats">
+              <ul class="messages">
+                
+              </ul>
+            </div>
+            
+          </div>
+
+          <div class="msg-footer">
+            <form action="" onsubmit="sendMsg()">
+              <div class="msg-footer-input">
+
+                <span><input id="m" autocomplete="off"></span>
+
+              </div>
+           
+              <div class="botones_chat">
+
+              <label for="send enviar audio"><button title= "Grabar Audio"> <i class="fa fa-microphone" style="font-size: 36px; color:red;"></i></button></label>
+
+              <label for="send enviar"> <button title= "Enviar mensaje" type="submit" id="sendButton" > <i class="fa fa-paper-plane fa-3x" aria-hidden="true"> </i></button></label>
+
+            </div>
+
+            </form>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="liston-boa">
+        <img src="/style/logo_boa_black.png" alt="BoaApp" srcset="">
+      </div>
+      
+        
+    </div>
+  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/Chat-Node/node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="/Chat-Node/scripts/msg_app.js"></script>
+
+  
+</html>
